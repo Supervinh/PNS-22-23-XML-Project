@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Définition des types complexes -->
+    <xs:complexType name="clientType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+            <xs:element name="dateNaissance" type="xs:date"/>
+            <xs:element name="adresse" type="xs:string"/>
+            <xs:element name="telephone" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="accompagnateurType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+            <xs:element name="adresse" type="xs:string"/>
+            <xs:element name="telephone" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="enseignantType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+            <xs:element name="adresse" type="xs:string"/>
+            <xs:element name="telephone" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="specialite" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="offreType">
+        <xs:sequence>
+            <xs:element name="langue" type="xs:string"/>
+            <xs:element name="destination" type="xs:string"/>
+            <xs:element name="typeSejour" type="xs:string"/>
+            <xs:element name="typePublic" type="xs:string"/>
+            <xs:element name="duree" type="xs:integer"/>
+            <xs:element name="dateDebut" type="xs:date"/>
+            <xs:element name="dateFin" type="xs:date"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="sejourType">
+        <xs:sequence>
+            <xs:element name="offre" type="offreType"/>
+            <xs:element name="client" type="clientType"/>
+            <xs:element name="accompagnateur" type="accompagnateurType"/>
+            <xs:element name="enseignant" type="enseignantType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition de la structure du document -->
+    <xs:element name="sejours">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sejour" type="sejourType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
