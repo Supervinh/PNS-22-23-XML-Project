@@ -6,9 +6,10 @@
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <title>Les enseignants et accompagnateurs</title>
-                <link rel="stylesheet" type="text/css" href="projet.css"/>
+                <link rel="stylesheet" type="text/css" href="scenario1.css"/>
             </head>
             <body>
+                <h1> Liste des informations de contact des différents encadrants de l'agence</h1>
                 <p>Voici la liste des enseignants:</p>
 
                 <xsl:for-each select="agence/enseignants/enseignant">

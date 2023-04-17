@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-    <!-- Group clients by type of stay -->
-    <xsl:key name="clients-by-stay-type" match="//sejour" use="@typeSejour" />
-
-    <!-- Template for root node -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
+    <xsl:key name="sejourParType" match="sejour" use="@typeSejour"/>
     <xsl:template match="/">
-        <resultats>
-            <!-- Apply template for each unique type of stay -->
-            <xsl:for-each select="//sejour[generate-id() = generate-id(key('clients-by-stay-type', @typeSejour)[1])]">
-                <sejour typeSejour="{@typeSejour}">
-                    <ageMoyen>
-                        <!-- Calculate the average age of clients for this type of stay -->
-                        <xsl:call-template name="calculate-average-age">
-                            <xsl:with-param name="clients" select="key('clients-by-stay-type', @typeSejour)/clients/client" />
-                        </xsl:call-template>
-                    </ageMoyen>
-                </sejour>
-            </xsl:for-each>
-        </resultats>
+        <html>
+            <head>
+                <title>Résumé des séjours par type</title>
+                <link rel="stylesheet" type="text/css" href="scenario2.css"/>
+            </head>
+            <body>
+                <h1>Résumé des séjours par type</h1>
+                <table>
+                    <tr>
+                        <th>Type de séjour</th>
+                        <th>Nombre de clients</th>
+                    </tr>
+                    <xsl:for-each select="agence/sejours/sejour[count(. | key('sejourParType', @typeSejour)[1]) = 1]">
+                        <xsl:sort select="@typeSejour"/>
+                        <tr>
+                            <td>
+                                <xsl:value-of select="@typeSejour"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="count(key('sejourParType', @typeSejour)/clients/client)"/>
+                            </td>
+                        </tr>
+                    </xsl:for-each>
+                    <tr>
+                        <th>Nombre total de clients</th>
+                        <td>
+                            <xsl:value-of select="count(agence/sejours/sejour/clients/client)"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Nombre moyen de clients par type de séjour</th>
+                        <td>
+                            <xsl:value-of select="count(agence/sejours/sejour/clients/client) div count(agence/sejours/sejour[count(. | key('sejourParType', @typeSejour)[1]) = 1])"/>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>
     </xsl:template>
-
-    <!-- Template for calculating the average age of clients -->
-    <xsl:template name="calculate-average-age">
-        <xsl:param name="clients" />
-        <xsl:variable name="totalAge">
-            <!-- Sum the age of all clients for this type of stay -->
-            <xsl:for-each select="$clients">
-                <xsl:value-of select="years-from-duration(current-date() - xs:date(//client[@idref = current()/@idref]/@dateNaissance))" />
-            </xsl:for-each>
-        </xsl:variable>
-        <xsl:variable name="numClients" select="count($clients)" />
-        <!-- Calculate the average age and round to two decimal places -->
-        <xsl:value-of select="format-number($totalAge div $numClients, '#.##')" />
-    </xsl:template>
-
-
 </xsl:stylesheet>

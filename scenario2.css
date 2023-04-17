@@ -1,0 +1,36 @@
+/* Style de la page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style du titre principal */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style de la table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Style des cellules de la table */
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Style de la première ligne de la table (en-tête) */
+tr:first-child {
+    font-weight: bold;
+    background-color: #eee;
+}
