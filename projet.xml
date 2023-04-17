@@ -1,140 +1,66 @@
-<agence>
-    <!--1 or more repetitions:-->
+<agence nom="Voyages Linguistiques">
     <sejours>
-        <!--1 or more repetitions:-->
-        <sejour typeSejour="immersion en famille" typePublic="enfants">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <offres>
-                <offre>
-                    <nomOffre>Offre 1</nomOffre>
-                    <description>Ceci est une offre de test</description>
-                    <langues>
-                        <langue>
-                            <langue>Anglais</langue>
-                        </langue>
-                        <langue>
-                            <langue>Français</langue>
-                        </langue>
-                    </langues>
-                    <destination>France</destination>
-                    <activites>
-                        <activites_sportive>
-                            <activite_sportive>Football</activite_sportive>
-                            <activite_sportive>Basketball</activite_sportive>
-                            <dateDebut>2023-07-01</dateDebut>
-                            <dateFin>2023-07-15</dateFin>
-                        </activites_sportive>
-                        <activites_culturelle>
-                            <activite_culturelle>Musée du Louvre</activite_culturelle>
-                            <activite_culturelle>Cathédrale Notre-Dame de Paris</activite_culturelle>
-                            <dateDebut>2023-07-05</dateDebut>
-                            <dateFin>2023-07-10</dateFin>
-                        </activites_culturelle>
-                        <activites_linguistique>
-                            <cours>
-                                <langue>Anglais</langue>
-                                <enseignant>
-                                    <nom>Smith</nom>
-                                    <prenom>John</prenom>
-                                    <adresse>5 rue de la Paix</adresse>
-                                    <telephone>01 23 45 67 89</telephone>
-                                    <email>j.smith@example.com</email>
-                                    <specialite>Anglais</specialite>
-                                </enseignant>
-                                <dateDebut>2023-07-01</dateDebut>
-                                <dateFin>2023-07-15</dateFin>
-                            </cours>
-                            <testLinguistique>
-                                <langue>Anglais</langue>
-                                <note>80</note>
-                            </testLinguistique>
-                            <dateDebut>2023-07-01</dateDebut>
-                            <dateFin>2023-07-15</dateFin>
-                        </activites_linguistique>
-                    </activites>
-                </offre>
-                <offre>
-                    <nomOffre>Offre 2</nomOffre>
-                    <description>Ceci est une deuxième offre de test</description>
-                    <langues>
-                        <langue>
-                            <langue>Allemand</langue>
-                        </langue>
-                    </langues>
-                    <destination>Allemagne</destination>
-                    <activites>
-                        <activites_sportive>
-                            <activite_sportive>Volleyball</activite_sportive>
-                            <dateDebut>2023-07-01</dateDebut>
-                            <dateFin>2023-07-15</dateFin>
-                        </activites_sportive>
-                        <activites_culturelle>
-                            <activite_culturelle>Château de Neuschwanstein</activite_culturelle>
-                            <dateDebut>2023-07-05</dateDebut>
-                            <dateFin>2023-07-10</dateFin>
-                        </activites_culturelle>
-                    </activites>
-                </offre>
-            </offres>
-
+        <sejour typeSejour="immersion en famille" typePublic="familles">
+            <offre>
+                <nomOffre>Anglais en famille d'accueil en Angleterre</nomOffre>
+                <description>Immersion en famille pour améliorer son anglais</description>
+                <langues>
+                    <langue>
+                        <langue>Anglais</langue>
+                    </langue>
+                </langues>
+                <destination>Angleterre</destination>
+            </offre>
             <accompagnateurs>
-                <!--Zero or more repetitions:-->
-                <accompagnateur>
-                    <nom>string</nom>
-                    <prenom>string</prenom>
-                    <adresse>string</adresse>
-                    <telephone>string</telephone>
-                    <email>string</email>
-                </accompagnateur>
+                <accompagnateur idref="acc1">John Doe</accompagnateur>
             </accompagnateurs>
             <enseignants>
-                <!--1 or more repetitions:-->
-                <enseignant>
-                    <nom>string</nom>
-                    <prenom>string</prenom>
-                    <adresse>string</adresse>
-                    <telephone>string</telephone>
-                    <email>string</email>
-                    <specialite>string</specialite>
-                </enseignant>
+                <enseignant idref="ens1">Jane Doe</enseignant>
             </enseignants>
-            <prix>1.5E2</prix>
-            <dateDebut>2013-11-23</dateDebut>
-            <dateFin>2014-06-09+02:00</dateFin>
+            <prix>1500</prix>
+            <dateDebut>2023-07-01</dateDebut>
+            <dateFin>2023-07-15</dateFin>
             <clients>
-                <!--Zero or more repetitions:-->
-                <client>
-                    <nom>string</nom>
-                    <prenom>string</prenom>
-                    <dateNaissance>2008-11-15</dateNaissance>
-                    <adresse>string</adresse>
-                    <telephone>string</telephone>
-                    <email>string</email>
-                </client>
+                <client idref="cli1">Alice Smith</client>
+                <client idref="cli2">Bob Johnson</client>
             </clients>
         </sejour>
     </sejours>
-    <!--1 or more repetitions:-->
     <accompagnateurs>
-        <!--Zero or more repetitions:-->
-        <accompagnateur>
-            <nom>string</nom>
-            <prenom>string</prenom>
-            <adresse>string</adresse>
-            <telephone>string</telephone>
-            <email>string</email>
+        <accompagnateur id="acc1">
+            <nom>Doe</nom>
+            <prenom>John</prenom>
+            <adresse>12 rue des Voyages</adresse>
+            <telephone>0123456789</telephone>
+            <email>johndoe@voyageslinguistiques.com</email>
         </accompagnateur>
     </accompagnateurs>
-    <!--1 or more repetitions:-->
     <enseignants>
-        <!--1 or more repetitions:-->
-        <enseignant>
-            <nom>string</nom>
-            <prenom>string</prenom>
-            <adresse>string</adresse>
-            <telephone>string</telephone>
-            <email>string</email>
-            <specialite>string</specialite>
+        <enseignant id="ens1">
+            <nom>Doe</nom>
+            <prenom>Jane</prenom>
+            <adresse>12 rue des Voyages</adresse>
+            <telephone>0123456789</telephone>
+            <email>janedoe@voyageslinguistiques.com</email>
+            <specialite>Anglais</specialite>
         </enseignant>
     </enseignants>
+    <clients>
+        <client id="cli1">
+            <nom>Smith</nom>
+            <prenom>Alice</prenom>
+            <dateNaissance>2007-04-23</dateNaissance>
+            <adresse>3 avenue des Langues</adresse>
+            <telephone>0678901234</telephone>
+            <email>alicesmith@gmail.com</email>
+        </client>
+        <client id="cli2">
+            <nom>Johnson</nom>
+            <prenom>Bob</prenom>
+            <dateNaissance>2006-11-11</dateNaissance>
+            <adresse>5 rue des Voyages</adresse>
+            <telephone>0678905678</telephone>
+            <email>bobjohnson@gmail.com</email>
+        </client>
+    </clients>
 </agence>
