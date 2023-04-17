@@ -27,11 +27,26 @@
             <xs:element name="telephone" type="xs:string"/>
             <xs:element name="email" type="xs:string"/>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="accompagnateursType">
         <xs:sequence>
             <xs:element name="accompagnateur" type="accompagnateurType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="accompagnateurRefType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="idref" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="accompagnateursRefType">
+        <xs:sequence>
+            <xs:element name="accompagnateur" type="accompagnateurRefType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -44,11 +59,26 @@
             <xs:element name="email" type="xs:string"/>
             <xs:element name="specialite" type="xs:string"/>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="enseignantsType">
         <xs:sequence>
-            <xs:element name="enseignant" type="enseignantType" maxOccurs="unbounded"/>
+            <xs:element name="enseignant" type="enseignantType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="enseignantRefType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="idref" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="enseignantsRefType">
+        <xs:sequence>
+            <xs:element name="enseignant" type="enseignantRefType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -112,7 +142,7 @@
     <xs:complexType name="coursType">
         <xs:sequence>
             <xs:element name="nom" type="xs:string"/>
-            <xs:element name="enseignants" type="enseignantsType"/>
+            <xs:element name="enseignants" type="enseignantsRefType"/>
             <xs:element name="langue" type="langueType"/>
         </xs:sequence>
     </xs:complexType>
@@ -159,8 +189,8 @@
     <xs:complexType name="sejourType">
         <xs:sequence>
             <xs:element name="offre" type="offreType" maxOccurs="unbounded"/>
-            <xs:element name="accompagnateurs" type="accompagnateursType"/>
-            <xs:element name="enseignants" type="enseignantsType"/>
+            <xs:element name="accompagnateurs" type="accompagnateursRefType"/>
+            <xs:element name="enseignants" type="enseignantsRefType"/>
             <xs:element name="prix" type="xs:float"/>
             <xs:element name="dateDebut" type="xs:date"/>
             <xs:element name="dateFin" type="xs:date"/>
@@ -185,6 +215,7 @@
                 <xs:element name="accompagnateurs" maxOccurs="unbounded" type="accompagnateursType"/>
                 <xs:element name="enseignants" maxOccurs="unbounded" type="enseignantsType"/>
             </xs:sequence>
+            <xs:attribute name="nom" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 

@@ -1,0 +1,62 @@
+<agence name="PolyVoyage">
+    <sejours>
+        <sejour typeSejour="immersion en famille" typePublic="familles">
+            <offre>
+                <nomOffre>Offre de séjour en immersion en famille</nomOffre>
+                <description>Un séjour linguistique pour vivre avec une famille d'accueil et pratiquer la langue au quotidien.</description>
+                <langues>
+                    <langue>
+                        <langue>Anglais</langue>
+                    </langue>
+                </langues>
+                <destination>Angleterre</destination>
+            </offre>
+            <accompagnateurs>
+                <accompagnateur idref="001">John Doe</accompagnateur>
+            </accompagnateurs>
+            <enseignants>
+                <enseignant idref="001">Jane Smith</enseignant>
+            </enseignants>
+            <prix>1500</prix>
+            <dateDebut>2023-07-01</dateDebut>
+            <dateFin>2023-07-15</dateFin>
+            <clients>
+                <client>
+                    <nom>Dupont</nom>
+                    <prenom>Pierre</prenom>
+                    <dateNaissance>2003-06-15</dateNaissance>
+                    <adresse>1 Rue des Fleurs, 75001 Paris</adresse>
+                    <telephone>01 23 45 67 89</telephone>
+                    <email>pierre.dupont@example.com</email>
+                </client>
+                <client>
+                    <nom>Durand</nom>
+                    <prenom>Marie</prenom>
+                    <dateNaissance>2004-04-10</dateNaissance>
+                    <adresse>2 Avenue des Champs, 75008 Paris</adresse>
+                    <telephone>01 98 76 54 32</telephone>
+                    <email>marie.durand@example.com</email>
+                </client>
+            </clients>
+        </sejour>
+    </sejours>
+    <accompagnateurs>
+        <accompagnateur id="001">
+            <nom>Doe</nom>
+            <prenom>John</prenom>
+            <adresse>10 Downing Street, London</adresse>
+            <telephone>+44 20 1234 5678</telephone>
+            <email>johndoe@example.com</email>
+        </accompagnateur>
+    </accompagnateurs>
+    <enseignants>
+        <enseignant id="001">
+            <nom>Smith</nom>
+            <prenom>Jane</prenom>
+            <adresse>25 Main Street, Boston, MA</adresse>
+            <telephone>+1 617-123-4567</telephone>
+            <email>janesmith@example.com</email>
+            <specialite>Anglais</specialite>
+        </enseignant>
+    </enseignants>
+</agence>
