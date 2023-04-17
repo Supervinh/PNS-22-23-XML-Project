@@ -1,66 +1,207 @@
-<agence nom="Voyages Linguistiques">
+<agence nom="Voyageurs du Monde">
     <sejours>
         <sejour typeSejour="immersion en famille" typePublic="familles">
             <offre>
-                <nomOffre>Anglais en famille d'accueil en Angleterre</nomOffre>
-                <description>Immersion en famille pour améliorer son anglais</description>
+                <nomOffre>Immersion en famille à Barcelone</nomOffre>
+                <description>Découvrez Barcelone tout en vivant avec une famille locale.</description>
                 <langues>
-                    <langue>
-                        <langue>Anglais</langue>
-                    </langue>
+                    <langue>Français</langue>
+                    <langue>Anglais</langue>
                 </langues>
-                <destination>Angleterre</destination>
+                <destination>Barcelone, Espagne</destination>
+                <activites>
+                    <activites_sportive>
+                        <activite_sportive>Football</activite_sportive>
+                    </activites_sportive>
+                    <activites_culturelle>
+                        <activite_culturelle>
+                            <nom>Musée Picasso</nom>
+                            <encadrement_culturel>
+                                <accompagnateur idref="1">Sophie</accompagnateur>
+                                <accompagnateur idref="2">Paul</accompagnateur>
+                            </encadrement_culturel>
+                            <description>Découvrez l'art de Picasso avec un guide expert.</description>
+                            <dateDebut>2023-05-10</dateDebut>
+                            <dateFin>2023-05-10</dateFin>
+                        </activite_culturelle>
+                    </activites_culturelle>
+                    <activites_linguistique>
+                        <cours>
+                            <nom>Cours de langue espagnole</nom>
+                            <enseignants>
+                                <enseignant idref="1">Juan</enseignant>
+                                <enseignant idref="2">Maria</enseignant>
+                            </enseignants>
+                            <langue>
+                                <langue>Espagnol</langue>
+                            </langue>
+                        </cours>
+                        <testLinguistique>
+                            <nom>Test de niveau en espagnol</nom>
+                            <langue>
+                                <langue>Espagnol</langue>
+                            </langue>
+                            <difficulte>B2</difficulte>
+                        </testLinguistique>
+                        <dateDebut>2023-05-10</dateDebut>
+                        <dateFin>2023-05-20</dateFin>
+                    </activites_linguistique>
+                </activites>
             </offre>
-            <accompagnateurs>
-                <accompagnateur idref="acc1">John Doe</accompagnateur>
-            </accompagnateurs>
-            <enseignants>
-                <enseignant idref="ens1">Jane Doe</enseignant>
-            </enseignants>
-            <prix>1500</prix>
-            <dateDebut>2023-07-01</dateDebut>
-            <dateFin>2023-07-15</dateFin>
+            <prix>500</prix>
+            <dateDebut>2023-06-01</dateDebut>
+            <dateFin>2023-06-10</dateFin>
             <clients>
-                <client idref="cli1">Alice Smith</client>
-                <client idref="cli2">Bob Johnson</client>
+                <client idref="1">Emma</client>
+            </clients>
+        </sejour>
+
+        <sejour typeSejour="cours linguistiques" typePublic="adultes">
+        <offre>
+            <nomOffre>Cours de langue italienne à Florence</nomOffre>
+            <description>Partez apprendre la langue italienne dans un cadre idyllique à Florence !</description>
+            <langues>
+                <!--1 or more repetitions:-->
+                <langue>
+                    <langue>italien</langue>
+                </langue>
+            </langues>
+            <destination>Florence, Italie</destination>
+            <activites>
+                <!--Optional:-->
+                <activites_culturelle>
+                    <!--1 or more repetitions:-->
+                    <activite_culturelle>
+                        <nom>Musée des Offices</nom>
+                        <encadrement_culturel>
+                            <!--Zero or more repetitions:-->
+                            <accompagnateur idref="1">Sophie</accompagnateur>
+                        </encadrement_culturel>
+                        <description>Visite du musée des Offices, qui abrite une des plus importantes collections d'art de la Renaissance italienne</description>
+                        <dateDebut>2023-05-01</dateDebut>
+                        <dateFin>2023-05-01</dateFin>
+                    </activite_culturelle>
+                    <activite_culturelle>
+                        <nom>Visite guidée de la ville</nom>
+                        <encadrement_culturel>
+                            <!--Zero or more repetitions:-->
+                            <accompagnateur idref="2">Marco</accompagnateur>
+                        </encadrement_culturel>
+                        <description>Visite guidée de la ville de Florence, avec ses célèbres monuments et places</description>
+                        <dateDebut>2023-05-02</dateDebut>
+                        <dateFin>2023-05-02</dateFin>
+                    </activite_culturelle>
+                </activites_culturelle>
+                <activites_linguistique>
+                    <cours>
+                        <nom>Cours intensif</nom>
+                        <enseignants>
+                            <!--1 or more repetitions:-->
+                            <enseignant idref="3">Giuseppe</enseignant>
+                            <enseignant idref="4">Maria</enseignant>
+                        </enseignants>
+                        <langue>
+                            <langue>italien</langue>
+                        </langue>
+                    </cours>
+                    <testLinguistique>
+                        <nom>Test de niveau</nom>
+                        <langue>
+                            <langue>italien</langue>
+                        </langue>
+                        <difficulte>B2</difficulte>
+                    </testLinguistique>
+                    <dateDebut>2023-05-01</dateDebut>
+                    <dateFin>2023-05-05</dateFin>
+                </activites_linguistique>
+            </activites>
+        </offre>
+            <prix>1500</prix>
+            <dateDebut>2023-06-01</dateDebut>
+            <dateFin>2023-06-10</dateFin>
+            <clients>
+                <client idref="2">Marie</client>
+                <client idref="3">Paul</client>
             </clients>
         </sejour>
     </sejours>
     <accompagnateurs>
-        <accompagnateur id="acc1">
-            <nom>Doe</nom>
-            <prenom>John</prenom>
-            <adresse>12 rue des Voyages</adresse>
-            <telephone>0123456789</telephone>
-            <email>johndoe@voyageslinguistiques.com</email>
+        <accompagnateur id="1">
+            <nom>Dupont</nom>
+            <prenom>Sophie</prenom>
+            <adresse>12 rue des Fleurs, 75001 Paris</adresse>
+            <telephone>01 23 45 67 89</telephone>
+            <email>sophie.dupont@example.com</email>
+        </accompagnateur>
+        <accompagnateur id="2">
+            <nom>Dubois</nom>
+            <prenom>Paul</prenom>
+            <adresse>15 rue des Arts, 69002 Lyon</adresse>
+            <telephone>04 78 90 12 34</telephone>
+            <email>paul.dubois@example.com</email>
+        </accompagnateur>
+        <accompagnateur id="3">
+            <nom>Moreau</nom>
+            <prenom>Marco</prenom>
+            <adresse>2 rue des Champs, 34000 Montpellier</adresse>
+            <telephone>04 56 78 90 12</telephone>
+            <email>marco.moreau@example.com</email>
         </accompagnateur>
     </accompagnateurs>
     <enseignants>
-        <enseignant id="ens1">
-            <nom>Doe</nom>
-            <prenom>Jane</prenom>
-            <adresse>12 rue des Voyages</adresse>
-            <telephone>0123456789</telephone>
-            <email>janedoe@voyageslinguistiques.com</email>
-            <specialite>Anglais</specialite>
+        <enseignant id="1">
+            <nom>Garcia</nom>
+            <prenom>Juan</prenom>
+            <adresse>7 avenue des Sciences, 34000 Montpellier</adresse>
+            <telephone>04 67 89 01 23</telephone>
+            <email>juan.garcia@example.com</email>
+        </enseignant>
+        <enseignant id="2">
+            <nom>Rodriguez</nom>
+            <prenom>Maria</prenom>
+            <adresse>21 rue du Paradis, 69003 Lyon</adresse>
+            <telephone>04 72 34 56 78</telephone>
+            <email>maria.rodriguez@example.com</email>
+        </enseignant>
+        <enseignant id="3">
+            <nom>Picoli</nom>
+            <prenom>Giuseppe</prenom>
+            <adresse>10 rue de la Paix, 75002 Paris</adresse>
+            <telephone>01 34 56 78 90</telephone>
+            <email> guisepe.picoli@example.com</email>
+        </enseignant>
+        <enseignant id="4">
+            <nom>Picoli</nom>
+            <prenom>Maria</prenom>
+            <adresse>10 rue de la Paix, 75002 Paris</adresse>
+            <telephone>01 34 56 78 90</telephone>
+            <email> maria.picoli@example.com</email>
         </enseignant>
     </enseignants>
     <clients>
-        <client id="cli1">
-            <nom>Smith</nom>
-            <prenom>Alice</prenom>
-            <dateNaissance>2007-04-23</dateNaissance>
-            <adresse>3 avenue des Langues</adresse>
-            <telephone>0678901234</telephone>
-            <email>alicesmith@gmail.com</email>
+        <client id="1">
+            <nom>Leclerc</nom>
+            <prenom>Emma</prenom>
+            <dateNaissance>2008-05-12</dateNaissance>
+            <adresse>10 rue de la Paix, 75002 Paris</adresse>
+            <telephone>01 34 56 78 90</telephone>
+            <email>marie.leclerc@example.com</email>
         </client>
-        <client id="cli2">
-            <nom>Johnson</nom>
-            <prenom>Bob</prenom>
-            <dateNaissance>2006-11-11</dateNaissance>
-            <adresse>5 rue des Voyages</adresse>
-            <telephone>0678905678</telephone>
-            <email>bobjohnson@gmail.com</email>
+        <client id="2">
+            <nom>Dupont</nom>
+            <prenom>Marie</prenom>
+            <dateNaissance>1990-01-01</dateNaissance>
+            <adresse>12 rue des Lilas, 75001 Paris</adresse>
+            <telephone>01 23 45 67 89</telephone>
+            <email>marie.dupont@gmail.com</email>
+        </client>
+        <client id="3">
+            <nom>Leblanc</nom>
+            <prenom>Paul</prenom>
+            <dateNaissance>1985-06-15</dateNaissance>
+            <adresse>25 avenue des Champs-Elysées, 75008 Paris</adresse>
+            <telephone>01 45 67 89 01</telephone>
+            <email>paul.leblanc@gmail.com</email>
         </client>
     </clients>
 </agence>

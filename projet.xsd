@@ -104,6 +104,7 @@
             <xs:element name="description" type="xs:string"/>
             <xs:element name="langues" type="languesType"/>
             <xs:element name="destination" type="xs:string"/>
+            <xs:element name="activites" type="activitesType"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -123,27 +124,65 @@
 
     <xs:complexType name="activitesType">
         <xs:sequence>
-            <xs:element name="activites_sportive" type="activites_sportivesType"/>
-            <xs:element name="activites_culturelle" type="activites_culturellesType"/>
-            <xs:element name="activites_linguistique" type="activites_linguistiquesType"/>
+            <xs:element name="activites_sportive" type="activites_sportivesType" minOccurs="0"/>
+            <xs:element name="activites_culturelle" type="activites_culturellesType" minOccurs="0"/>
+            <xs:element name="activites_linguistique" type="activites_linguistiquesType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="activites_sportivesType">
         <xs:sequence>
-            <xs:element name="activite_sportive" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="activite_sportive" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="activite_sportiveType">
+        <xs:sequence>
+            <xs:element name="nom" type="sport"/>
+            <xs:element name="encadrement_sportif" type="accompagnateursRefType"/>
+            <xs:element name="description" type="xs:string"/>
             <xs:element name="dateDebut" type="xs:date"/>
-            <xs:element name="dateFin" type="xs:date"/>
+            <xs:element name="dateFin" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="activites_culturellesType">
         <xs:sequence>
-            <xs:element name="activite_sportive" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="dateDebut" type="xs:date"/>
-            <xs:element name="dateFin" type="xs:date"/>
+            <xs:element name="activite_culturelle" type="activite_culturelleType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="activite_culturelleType">
+        <xs:sequence>
+            <xs:element name="nom" type="culture"/>
+            <xs:element name="encadrement_culturel" type="accompagnateursRefType"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="dateDebut" type="xs:date"/>
+            <xs:element name="dateFin" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="culture">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Musée" />
+            <xs:enumeration value="Danse" />
+            <xs:enumeration value="Dessin" />
+            <xs:enumeration value="Chant" />
+            <xs:enumeration value="Poterie" />
+            <xs:enumeration value="Cinéma" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="sport">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BasketBall" />
+            <xs:enumeration value="Tennis de table" />
+            <xs:enumeration value="Volleyball" />
+            <xs:enumeration value="Badminton" />
+            <xs:enumeration value="Natation" />
+            <xs:enumeration value="Accrobranche" />
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:complexType name="activites_linguistiquesType">
         <xs:sequence>
@@ -204,8 +243,6 @@
     <xs:complexType name="sejourType">
         <xs:sequence>
             <xs:element name="offre" type="offreType" maxOccurs="unbounded"/>
-            <xs:element name="accompagnateurs" type="accompagnateursRefType"/>
-            <xs:element name="enseignants" type="enseignantsRefType"/>
             <xs:element name="prix" type="xs:float"/>
             <xs:element name="dateDebut" type="xs:date"/>
             <xs:element name="dateFin" type="xs:date"/>
