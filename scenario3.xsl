@@ -39,13 +39,11 @@
                             <b>Type de l'activité : </b>
                             <xsl:value-of select="name(*)"/>
                             <br/>
-                        </li>
-                        <li>
+
                             <b>Nom :</b>
                             <xsl:value-of select="*/nom"/>
                             <br/>
-                        </li>
-                        <li>
+
                             <b>Description :</b>
                             <xsl:value-of select="*/description"/>
                             <br/>
