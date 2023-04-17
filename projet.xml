@@ -53,6 +53,7 @@
             <dateFin>2023-06-10</dateFin>
             <clients>
                 <client idref="1">Emma</client>
+                <client idref="4">Denis</client>
             </clients>
         </sejour>
 
@@ -185,7 +186,7 @@
             <dateNaissance>2008-05-12</dateNaissance>
             <adresse>10 rue de la Paix, 75002 Paris</adresse>
             <telephone>01 34 56 78 90</telephone>
-            <email>marie.leclerc@example.com</email>
+            <email>emma.leclerc@example.com</email>
         </client>
         <client id="2">
             <nom>Dupont</nom>
@@ -202,6 +203,14 @@
             <adresse>25 avenue des Champs-Elysées, 75008 Paris</adresse>
             <telephone>01 45 67 89 01</telephone>
             <email>paul.leblanc@gmail.com</email>
+        </client>
+        <client id="4">
+            <nom>Brognart</nom>
+            <prenom>Denis</prenom>
+            <dateNaissance>1980-12-25</dateNaissance>
+            <adresse>10 rue de la Paix, 75002 Paris</adresse>
+            <telephone>01 34 56 78 90</telephone>
+            <email>denis.brognart@example.com</email>
         </client>
     </clients>
 </agence>
