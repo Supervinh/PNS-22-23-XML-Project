@@ -58,65 +58,62 @@
         </sejour>
 
         <sejour typeSejour="cours linguistiques" typePublic="adultes">
-        <offre>
-            <nomOffre>Cours de langue italienne à Florence</nomOffre>
-            <description>Partez apprendre la langue italienne dans un cadre idyllique à Florence !</description>
-            <langues>
-                <!--1 or more repetitions:-->
-                <langue>
-                    <langue>italien</langue>
-                </langue>
-            </langues>
-            <destination>Florence, Italie</destination>
-            <activites>
-                <!--Optional:-->
-                <activites_culturelle>
-                    <!--1 or more repetitions:-->
-                    <activite_culturelle>
-                        <nom>Musée des Offices</nom>
-                        <encadrement_culturel>
-                            <!--Zero or more repetitions:-->
-                            <accompagnateur idref="1">Sophie</accompagnateur>
-                        </encadrement_culturel>
-                        <description>Visite du musée des Offices, qui abrite une des plus importantes collections d'art de la Renaissance italienne</description>
+            <offre>
+                <nomOffre>Cours de langue italienne à Florence</nomOffre>
+                <description>Partez apprendre la langue italienne dans un cadre idyllique à Florence !</description>
+                <langues>
+                    <langue>
+                        <langue>italien</langue>
+                    </langue>
+                </langues>
+                <destination>Florence, Italie</destination>
+                <activites>
+                    <activites_culturelle>
+                        <activite_culturelle>
+                            <nom>Musée des Offices</nom>
+                            <encadrement_culturel>
+                                <accompagnateur idref="1">Sophie</accompagnateur>
+                            </encadrement_culturel>
+                            <description>Visite du musée des Offices, qui abrite une des plus importantes collections
+                                d'art de la Renaissance italienne
+                            </description>
+                            <dateDebut>2023-05-01</dateDebut>
+                            <dateFin>2023-05-01</dateFin>
+                        </activite_culturelle>
+                        <activite_culturelle>
+                            <nom>Visite guidée de la ville</nom>
+                            <encadrement_culturel>
+                                <accompagnateur idref="2">Marco</accompagnateur>
+                            </encadrement_culturel>
+                            <description>Visite guidée de la ville de Florence, avec ses célèbres monuments et places
+                            </description>
+                            <dateDebut>2023-05-02</dateDebut>
+                            <dateFin>2023-05-02</dateFin>
+                        </activite_culturelle>
+                    </activites_culturelle>
+                    <activites_linguistique>
+                        <cours>
+                            <nom>Cours intensif</nom>
+                            <enseignants>
+                                <enseignant idref="3">Giuseppe</enseignant>
+                                <enseignant idref="4">Maria</enseignant>
+                            </enseignants>
+                            <langue>
+                                <langue>italien</langue>
+                            </langue>
+                        </cours>
+                        <testLinguistique>
+                            <nom>Test de niveau</nom>
+                            <langue>
+                                <langue>italien</langue>
+                            </langue>
+                            <difficulte>B2</difficulte>
+                        </testLinguistique>
                         <dateDebut>2023-05-01</dateDebut>
-                        <dateFin>2023-05-01</dateFin>
-                    </activite_culturelle>
-                    <activite_culturelle>
-                        <nom>Visite guidée de la ville</nom>
-                        <encadrement_culturel>
-                            <!--Zero or more repetitions:-->
-                            <accompagnateur idref="2">Marco</accompagnateur>
-                        </encadrement_culturel>
-                        <description>Visite guidée de la ville de Florence, avec ses célèbres monuments et places</description>
-                        <dateDebut>2023-05-02</dateDebut>
-                        <dateFin>2023-05-02</dateFin>
-                    </activite_culturelle>
-                </activites_culturelle>
-                <activites_linguistique>
-                    <cours>
-                        <nom>Cours intensif</nom>
-                        <enseignants>
-                            <!--1 or more repetitions:-->
-                            <enseignant idref="3">Giuseppe</enseignant>
-                            <enseignant idref="4">Maria</enseignant>
-                        </enseignants>
-                        <langue>
-                            <langue>italien</langue>
-                        </langue>
-                    </cours>
-                    <testLinguistique>
-                        <nom>Test de niveau</nom>
-                        <langue>
-                            <langue>italien</langue>
-                        </langue>
-                        <difficulte>B2</difficulte>
-                    </testLinguistique>
-                    <dateDebut>2023-05-01</dateDebut>
-                    <dateFin>2023-05-05</dateFin>
-                </activites_linguistique>
-            </activites>
-        </offre>
+                        <dateFin>2023-05-05</dateFin>
+                    </activites_linguistique>
+                </activites>
+            </offre>
             <prix>1500</prix>
             <dateDebut>2023-06-01</dateDebut>
             <dateFin>2023-06-10</dateFin>
@@ -169,14 +166,14 @@
             <prenom>Giuseppe</prenom>
             <adresse>10 rue de la Paix, 75002 Paris</adresse>
             <telephone>01 34 56 78 90</telephone>
-            <email> guisepe.picoli@example.com</email>
+            <email>guisepe.picoli@example.com</email>
         </enseignant>
         <enseignant id="4">
             <nom>Picoli</nom>
             <prenom>Maria</prenom>
             <adresse>10 rue de la Paix, 75002 Paris</adresse>
             <telephone>01 34 56 78 90</telephone>
-            <email> maria.picoli@example.com</email>
+            <email>maria.picoli@example.com</email>
         </enseignant>
     </enseignants>
     <clients>
