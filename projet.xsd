@@ -11,11 +11,26 @@
             <xs:element name="telephone" type="xs:string"/>
             <xs:element name="email" type="xs:string"/>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="clientsType">
         <xs:sequence>
             <xs:element name="client" type="clientType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="clientRefType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="idref" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="clientsRefType">
+        <xs:sequence>
+            <xs:element name="client" type="clientRefType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -194,7 +209,7 @@
             <xs:element name="prix" type="xs:float"/>
             <xs:element name="dateDebut" type="xs:date"/>
             <xs:element name="dateFin" type="xs:date"/>
-            <xs:element name="clients" type="clientsType"/>
+            <xs:element name="clients" type="clientsRefType"/>
         </xs:sequence>
         <xs:attribute name="typeSejour" type="type_sejourType"/>
         <xs:attribute name="typePublic" type="type_publicType"/>
@@ -214,6 +229,7 @@
                 <xs:element name="sejours" maxOccurs="unbounded" type="sejours"/>
                 <xs:element name="accompagnateurs" maxOccurs="unbounded" type="accompagnateursType"/>
                 <xs:element name="enseignants" maxOccurs="unbounded" type="enseignantsType"/>
+                <xs:element name="clients" maxOccurs="unbounded" type="clientsType"/>
             </xs:sequence>
             <xs:attribute name="nom" type="xs:string"/>
         </xs:complexType>
