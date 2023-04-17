@@ -1,0 +1,53 @@
+/* Couleur de fond pour le body */
+body {
+    background-color: #f2f2f2;
+}
+
+p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Style pour les titres */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Style pour les listes */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour les éléments de la liste */
+li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style pour les noms */
+li span.nom {
+    font-weight: bold;
+}
+
+/* Style pour les prénoms */
+li span.prenom {
+    font-style: italic;
+}
+
+/* Style pour les labels */
+li span.label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Style pour les numéros de téléphone */
+li span.telephone {
+    font-weight: bold;
+}

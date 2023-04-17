@@ -153,6 +153,7 @@
             <adresse>7 avenue des Sciences, 34000 Montpellier</adresse>
             <telephone>04 67 89 01 23</telephone>
             <email>juan.garcia@example.com</email>
+            <specialite>Espagnol</specialite>
         </enseignant>
         <enseignant id="2">
             <nom>Rodriguez</nom>
@@ -160,6 +161,7 @@
             <adresse>21 rue du Paradis, 69003 Lyon</adresse>
             <telephone>04 72 34 56 78</telephone>
             <email>maria.rodriguez@example.com</email>
+            <specialite>Espagnol</specialite>
         </enseignant>
         <enseignant id="3">
             <nom>Picoli</nom>
@@ -167,6 +169,7 @@
             <adresse>10 rue de la Paix, 75002 Paris</adresse>
             <telephone>01 34 56 78 90</telephone>
             <email>guisepe.picoli@example.com</email>
+            <specialite>Italien</specialite>
         </enseignant>
         <enseignant id="4">
             <nom>Picoli</nom>
@@ -174,6 +177,7 @@
             <adresse>10 rue de la Paix, 75002 Paris</adresse>
             <telephone>01 34 56 78 90</telephone>
             <email>maria.picoli@example.com</email>
+            <specialite>Italien</specialite>
         </enseignant>
     </enseignants>
     <clients>
