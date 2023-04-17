@@ -59,9 +59,9 @@
             <xs:element name="typeSejour">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="green"/>
-                        <xs:enumeration value="red"/>
-                        <xs:enumeration value="blue"/>
+                        <xs:enumeration value="colonies de vacances"/>
+                        <xs:enumeration value="groupes scolaires"/>
+                        <xs:enumeration value="immersion en famille"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
