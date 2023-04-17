@@ -185,7 +185,7 @@
 
     <xs:complexType name="activites_sportivesType">
         <xs:sequence>
-            <xs:element name="activite_sportive" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="activite_sportive" type="activite_sportiveType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -209,7 +209,7 @@
             <xs:enumeration value="Accrobranche" />
         </xs:restriction>
     </xs:simpleType>
-    
+
     <xs:complexType name="activites_culturellesType">
         <xs:sequence>
             <xs:element name="activite_culturelle" type="activite_culturelleType" maxOccurs="unbounded"/>

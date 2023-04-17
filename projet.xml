@@ -11,7 +11,15 @@
                 <destination>Barcelone, Espagne</destination>
                 <activites>
                     <activites_sportive>
-                        <activite_sportive>Football</activite_sportive>
+                        <activite_sportive>
+                            <nom>Apprentissage Football</nom>
+                            <encadrement_sportif>
+                                <accompagnateur idref="3">Marco</accompagnateur>
+                            </encadrement_sportif>
+                            <description>Apprenez à jouer au football avec un coach professionnel.</description>
+                            <dateDebut>2023-06-01</dateDebut>
+                            <dateFin>2023-06-10</dateFin>
+                        </activite_sportive>
                     </activites_sportive>
                     <activites_culturelle>
                         <activite_culturelle>
@@ -21,8 +29,8 @@
                                 <accompagnateur idref="2">Paul</accompagnateur>
                             </encadrement_culturel>
                             <description>Découvrez l'art de Picasso avec un guide expert.</description>
-                            <dateDebut>2023-05-10</dateDebut>
-                            <dateFin>2023-05-10</dateFin>
+                            <dateDebut>2023-06-01</dateDebut>
+                            <dateFin>2023-06-10</dateFin>
                         </activite_culturelle>
                     </activites_culturelle>
                     <activites_linguistique>
@@ -43,8 +51,8 @@
                             </langue>
                             <difficulte>B2</difficulte>
                         </testLinguistique>
-                        <dateDebut>2023-05-10</dateDebut>
-                        <dateFin>2023-05-20</dateFin>
+                        <dateDebut>2023-06-01</dateDebut>
+                        <dateFin>2023-06-10</dateFin>
                     </activites_linguistique>
                 </activites>
             </offre>
