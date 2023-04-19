@@ -2,9 +2,9 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output method="xml" indent="yes"/>
-    <xsl:variable name="dateDebut">2020-05-30</xsl:variable>
-    <xsl:variable name="dateFin">2024-06-30</xsl:variable>
-    <xsl:variable name="langue">Italien</xsl:variable>
+    <xsl:variable name="dateDebut">2023-05-30</xsl:variable>
+    <xsl:variable name="dateFin">2023-06-30</xsl:variable>
+    <xsl:variable name="langue">Espagnol</xsl:variable>
 
     <xsl:template match="/">
         <agence>

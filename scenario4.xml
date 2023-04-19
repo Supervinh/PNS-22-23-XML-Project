@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><agence nom="Voyageurs du Monde">
     <sejours>
-        <sejour typeSejour="cours linguistiques" typePublic="adultes">
+        <sejour typeSejour="immersion en famille" typePublic="familles">
             <offre>
-                <nomOffre>Cours de langue italienne à Florence</nomOffre>
-                <description>Partez apprendre la langue italienne dans un cadre idyllique à Florence !</description>
-                <destination>Florence, Italie</destination>
+                <nomOffre>Immersion en famille à Barcelone</nomOffre>
+                <description>Découvrez Barcelone tout en vivant avec une famille locale.</description>
+                <destination>Barcelone, Espagne</destination>
             </offre>
-            <prix>1500</prix>
-            <dateDebut>2023-05-01</dateDebut>
-            <dateFin>2023-05-05</dateFin>
-        </sejour>
-        <sejour typeSejour="cours linguistiques" typePublic="adultes">
-            <offre>
-                <nomOffre>Cours de langue italienne à Florence</nomOffre>
-                <description>Partez apprendre la langue italienne dans un cadre idyllique à Florence !</description>
-                <destination>Florence, Italie</destination>
-            </offre>
-            <prix>1500</prix>
-            <dateDebut>2023-11-27</dateDebut>
-            <dateFin>2023-11-27</dateFin>
+            <prix>500</prix>
+            <dateDebut>2023-06-01</dateDebut>
+            <dateFin>2023-06-10</dateFin>
         </sejour>
     </sejours>
 </agence>
