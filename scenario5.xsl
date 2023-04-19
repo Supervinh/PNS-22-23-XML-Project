@@ -42,7 +42,6 @@
             </xsl:when>
             <xsl:when test="'activites' = name() and count(*) > 0">
                 <xsl:text>{</xsl:text>
-<!--                <xsl:apply-templates select="*/*[name() != 'testLinguistique']" mode="object"/>-->
                 <xsl:apply-templates select="*" mode="object"/>
                 <xsl:text>}</xsl:text>
             </xsl:when>
@@ -81,7 +80,6 @@
                 <xsl:call-template name="enseignants">
                     <xsl:with-param name="enseignants" select="enseignants"/>
                 </xsl:call-template>
-<!--                <xsl:apply-templates select="enseignants"/>-->
                 <xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:when test="'clients' = name() and count(*) > 0 ">
