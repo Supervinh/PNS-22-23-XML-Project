@@ -69,6 +69,9 @@
                 <xsl:text>"</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:text>"</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
+        <xsl:if test="name() = 'sejour'">
+            <xsl:text>}</xsl:text>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template match="clients">
