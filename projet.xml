@@ -18,7 +18,7 @@
                             </encadrement_sportif>
                             <description>Apprenez à jouer au football avec un coach professionnel.</description>
                             <dateDebut>2023-06-01</dateDebut>
-                            <dateFin>2023-06-10</dateFin>
+                            <dateFin>2023-06-05</dateFin>
                         </activite_sportive>
                     </activites_sportive>
                     <activites_culturelle>
@@ -29,8 +29,8 @@
                                 <accompagnateur idref="2">Paul</accompagnateur>
                             </encadrement_culturel>
                             <description>Découvrez l'art de Picasso avec un guide expert.</description>
-                            <dateDebut>2023-06-01</dateDebut>
-                            <dateFin>2023-06-10</dateFin>
+                            <dateDebut>2023-06-04</dateDebut>
+                            <dateFin>2023-06-4</dateFin>
                         </activite_culturelle>
                     </activites_culturelle>
                     <activites_linguistique>
@@ -123,8 +123,8 @@
                 </activites>
             </offre>
             <prix>1500</prix>
-            <dateDebut>2023-06-01</dateDebut>
-            <dateFin>2023-06-10</dateFin>
+            <dateDebut>2023-05-01</dateDebut>
+            <dateFin>2023-05-05</dateFin>
             <clients>
                 <client idref="2">Marie</client>
                 <client idref="3">Paul</client>
@@ -150,8 +150,8 @@
                             <description>Visite du musée des Offices, qui abrite une des plus importantes collections
                                 d'art de la Renaissance italienne
                             </description>
-                            <dateDebut>2023-06-01</dateDebut>
-                            <dateFin>2023-06-10</dateFin>
+                            <dateDebut>2023-11-20</dateDebut>
+                            <dateFin>2023-11-20</dateFin>
                         </activite_culturelle>
                         <activite_culturelle>
                             <nom>Visite guidée de la ville</nom>
@@ -160,8 +160,8 @@
                             </encadrement_culturel>
                             <description>Visite guidée de la ville de Florence, avec ses célèbres monuments et places
                             </description>
-                            <dateDebut>2023-06-01</dateDebut>
-                            <dateFin>2023-06-10</dateFin>
+                            <dateDebut>2023-11-22</dateDebut>
+                            <dateFin>2023-11-22</dateFin>
                         </activite_culturelle>
                     </activites_culturelle>
                     <activites_linguistique>
@@ -182,14 +182,14 @@
                             </langue>
                             <difficulte>B2</difficulte>
                         </testLinguistique>
-                        <dateDebut>2023-06-01</dateDebut>
-                        <dateFin>2023-06-10</dateFin>
+                        <dateDebut>2023-11-20</dateDebut>
+                        <dateFin>2023-11-27</dateFin>
                     </activites_linguistique>
                 </activites>
             </offre>
             <prix>1500</prix>
-            <dateDebut>2023-06-01</dateDebut>
-            <dateFin>2023-06-10</dateFin>
+            <dateDebut>2023-11-27</dateDebut>
+            <dateFin>2023-11-27</dateFin>
             <clients>
                 <client idref="2">Marie</client>
                 <client idref="3">Paul</client>
