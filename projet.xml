@@ -95,8 +95,8 @@
                             </encadrement_culturel>
                             <description>Visite guidée de la ville de Florence, avec ses célèbres monuments et places
                             </description>
-                            <dateDebut>2023-05-02</dateDebut>
-                            <dateFin>2023-05-02</dateFin>
+                            <dateDebut>2023-06-01</dateDebut>
+                            <dateFin>2023-06-10</dateFin>
                         </activite_culturelle>
                     </activites_culturelle>
                     <activites_linguistique>
@@ -117,8 +117,8 @@
                             </langue>
                             <difficulte>B2</difficulte>
                         </testLinguistique>
-                        <dateDebut>2023-05-01</dateDebut>
-                        <dateFin>2023-05-05</dateFin>
+                        <dateDebut>2023-06-01</dateDebut>
+                        <dateFin>2023-06-10</dateFin>
                     </activites_linguistique>
                 </activites>
             </offre>
@@ -150,8 +150,8 @@
                             <description>Visite du musée des Offices, qui abrite une des plus importantes collections
                                 d'art de la Renaissance italienne
                             </description>
-                            <dateDebut>2023-05-01</dateDebut>
-                            <dateFin>2023-05-01</dateFin>
+                            <dateDebut>2023-06-01</dateDebut>
+                            <dateFin>2023-06-10</dateFin>
                         </activite_culturelle>
                         <activite_culturelle>
                             <nom>Visite guidée de la ville</nom>
@@ -160,8 +160,8 @@
                             </encadrement_culturel>
                             <description>Visite guidée de la ville de Florence, avec ses célèbres monuments et places
                             </description>
-                            <dateDebut>2023-05-02</dateDebut>
-                            <dateFin>2023-05-02</dateFin>
+                            <dateDebut>2023-06-01</dateDebut>
+                            <dateFin>2023-06-10</dateFin>
                         </activite_culturelle>
                     </activites_culturelle>
                     <activites_linguistique>
@@ -182,8 +182,8 @@
                             </langue>
                             <difficulte>B2</difficulte>
                         </testLinguistique>
-                        <dateDebut>2023-05-01</dateDebut>
-                        <dateFin>2023-05-05</dateFin>
+                        <dateDebut>2023-06-01</dateDebut>
+                        <dateFin>2023-06-10</dateFin>
                     </activites_linguistique>
                 </activites>
             </offre>
