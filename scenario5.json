@@ -1,0 +1,282 @@
+{
+  "agence": {
+    "sejours": {
+      "sejour": {
+        "offre": {
+          "nomOffre": "Immersion en famille à Barcelone",
+          "description": "Découvrez Barcelone tout en vivant avec une famille locale.",
+          "langues": {
+            "langue": "Français",
+            "langue": "Anglais",
+            "langue": "Espagnol"
+          },
+          "destination": "Barcelone, Espagne",
+          "activites": {
+            "activites_sportive": {
+              "activite_sportive": {
+                "nom": "Apprentissage Football",
+                "encadrement_sportif": {
+                  "accompagnateur": "Marco"
+                },
+                "description": "Apprenez à jouer au football avec un coach professionnel.",
+                "dateDebut": "2023-06-01",
+                "dateFin": "2023-06-05"
+              }
+            },
+            "activites_culturelle": {
+              "activite_culturelle": {
+                "nom": "Musée Picasso",
+                "encadrement_culturel": {
+                  "accompagnateur": "Sophie",
+                  "accompagnateur": "Paul"
+                },
+                "description": "Découvrez l'art de Picasso avec un guide expert.",
+                "dateDebut": "2023-06-04",
+                "dateFin": "2023-06-4"
+              }
+            },
+            "activites_linguistique": {
+              "cours": {
+                "nom": "Cours de langue espagnole",
+                "enseignants": {
+                  "enseignant": "Juan",
+                  "enseignant": "Maria"
+                },
+                "langue": {
+                  "langue": "Espagnol"
+                }
+              },
+              "testLinguistique": {
+                "nom": "Test de niveau en espagnol",
+                "langue": {
+                  "langue": "Espagnol"
+                },
+                "difficulte": "B2"
+              },
+              "dateDebut": "2023-06-01",
+              "dateFin": "2023-06-10"
+            }
+          }
+        },
+        "prix": "500",
+        "dateDebut": "2023-06-01",
+        "dateFin": "2023-06-10",
+        "clients": {
+          "client": "Emma",
+          "client": "Denis"
+        }
+      },
+      "sejour": {
+        "offre": {
+          "nomOffre": "Cours de langue italienne à Florence",
+          "description": "Partez apprendre la langue italienne dans un cadre idyllique à Florence !",
+          "langues": {
+            "langue": "Italien"
+          },
+          "destination": "Florence, Italie",
+          "activites": {
+            "activites_culturelle": {
+              "activite_culturelle": {
+                "nom": "Musée des Offices",
+                "encadrement_culturel": {
+                  "accompagnateur": "Sophie"
+                },
+                "description": "Visite du musée des Offices, qui abrite une des plus importantes collections d'art de la Renaissance italienne",
+                "dateDebut": "2023-06-15",
+                "dateFin": "2023-06-15"
+              },
+              "activite_culturelle": {
+                "nom": "Visite guidée de la ville",
+                "encadrement_culturel": {
+                  "accompagnateur": "Marco"
+                },
+                "description": "Visite guidée de la ville de Florence, avec ses célèbres monuments et places",
+                "dateDebut": "2023-06-16",
+                "dateFin": "2023-06-16"
+              }
+            },
+            "activites_linguistique": {
+              "cours": {
+                "nom": "Cours intensif",
+                "enseignants": {
+                  "enseignant": "Giuseppe",
+                  "enseignant": "Maria"
+                },
+                "langue": {
+                  "langue": "italien"
+                }
+              },
+              "testLinguistique": {
+                "nom": "Test de niveau",
+                "langue": {
+                  "langue": "Italien"
+                },
+                "difficulte": "B2"
+              },
+              "dateDebut": "2023-06-15",
+              "dateFin": "2023-06-23"
+            }
+          }
+        },
+        "prix": "1500",
+        "dateDebut": "2023-06-15",
+        "dateFin": "2023-06-25",
+        "clients": {
+          "client": "Marie",
+          "client": "Paul"
+        }
+      },
+      "sejour": {
+        "offre": {
+          "nomOffre": "Cours de langue italienne à Florence",
+          "description": "Partez apprendre la langue italienne dans un cadre idyllique à Florence !",
+          "langues": {
+            "langue": "Italien"
+          },
+          "destination": "Florence, Italie",
+          "activites": {
+            "activites_culturelle": {
+              "activite_culturelle": {
+                "nom": "Musée des Offices",
+                "encadrement_culturel": {
+                  "accompagnateur": "Sophie"
+                },
+                "description": "Visite du musée des Offices, qui abrite une des plus importantes collections d'art de la Renaissance italienne",
+                "dateDebut": "2023-11-20",
+                "dateFin": "2023-11-20"
+              },
+              "activite_culturelle": {
+                "nom": "Visite guidée de la ville",
+                "encadrement_culturel": {
+                  "accompagnateur": "Marco"
+                },
+                "description": "Visite guidée de la ville de Florence, avec ses célèbres monuments et places",
+                "dateDebut": "2023-11-22",
+                "dateFin": "2023-11-22"
+              }
+            },
+            "activites_linguistique": {
+              "cours": {
+                "nom": "Cours intensif",
+                "enseignants": {
+                  "enseignant": "Giuseppe",
+                  "enseignant": "Maria"
+                },
+                "langue": {
+                  "langue": "Italien"
+                }
+              },
+              "testLinguistique": {
+                "nom": "Test de niveau",
+                "langue": {
+                  "langue": "italien"
+                },
+                "difficulte": "B2"
+              },
+              "dateDebut": "2023-11-20",
+              "dateFin": "2023-11-27"
+            }
+          }
+        },
+        "prix": "1500",
+        "dateDebut": "2023-11-20",
+        "dateFin": "2023-11-27",
+        "clients": {
+          "client": "Marie",
+          "client": "Paul"
+        }
+      }
+    },
+    "accompagnateurs": {
+      "accompagnateur": {
+        "nom": "Dupont",
+        "prenom": "Sophie",
+        "adresse": "12 rue des Fleurs, 75001 Paris",
+        "telephone": "01 23 45 67 89",
+        "email": "sophie.dupont@example.com"
+      },
+      "accompagnateur": {
+        "nom": "Dubois",
+        "prenom": "Paul",
+        "adresse": "15 rue des Arts, 69002 Lyon",
+        "telephone": "04 78 90 12 34",
+        "email": "paul.dubois@example.com"
+      },
+      "accompagnateur": {
+        "nom": "Moreau",
+        "prenom": "Marco",
+        "adresse": "2 rue des Champs, 34000 Montpellier",
+        "telephone": "04 56 78 90 12",
+        "email": "marco.moreau@example.com"
+      }
+    },
+    "enseignants": {
+      "enseignant": {
+        "nom": "Garcia",
+        "prenom": "Juan",
+        "adresse": "7 avenue des Sciences, 34000 Montpellier",
+        "telephone": "04 67 89 01 23",
+        "email": "juan.garcia@example.com",
+        "specialite": "Espagnol"
+      },
+      "enseignant": {
+        "nom": "Rodriguez",
+        "prenom": "Maria",
+        "adresse": "21 rue du Paradis, 69003 Lyon",
+        "telephone": "04 72 34 56 78",
+        "email": "maria.rodriguez@example.com",
+        "specialite": "Espagnol"
+      },
+      "enseignant": {
+        "nom": "Picoli",
+        "prenom": "Giuseppe",
+        "adresse": "10 rue de la Paix, 75002 Paris",
+        "telephone": "01 34 56 78 90",
+        "email": "guisepe.picoli@example.com",
+        "specialite": "Italien"
+      },
+      "enseignant": {
+        "nom": "Picoli",
+        "prenom": "Maria",
+        "adresse": "10 rue de la Paix, 75002 Paris",
+        "telephone": "01 34 56 78 90",
+        "email": "maria.picoli@example.com",
+        "specialite": "Italien"
+      }
+    },
+    "clients": {
+      "client": {
+        "nom": "Leclerc",
+        "prenom": "Emma",
+        "dateNaissance": "2008-05-12",
+        "adresse": "10 rue de la Paix, 75002 Paris",
+        "telephone": "01 34 56 78 90",
+        "email": "emma.leclerc@example.com"
+      },
+      "client": {
+        "nom": "Dupont",
+        "prenom": "Marie",
+        "dateNaissance": "1990-01-01",
+        "adresse": "12 rue des Lilas, 75001 Paris",
+        "telephone": "01 23 45 67 89",
+        "email": "marie.dupont@gmail.com"
+      },
+      "client": {
+        "nom": "Leblanc",
+        "prenom": "Paul",
+        "dateNaissance": "1985-06-15",
+        "adresse": "25 avenue des Champs-Elysées, 75008 Paris",
+        "telephone": "01 45 67 89 01",
+        "email": "paul.leblanc@gmail.com"
+      },
+      "client": {
+        "nom": "Brognart",
+        "prenom": "Denis",
+        "dateNaissance": "1980-12-25",
+        "adresse": "10 rue de la Paix, 75002 Paris",
+        "telephone": "01 34 56 78 90",
+        "email": "denis.brognart@example.com"
+      }
+    }
+  }
+}
