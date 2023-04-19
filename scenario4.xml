@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><agence nom="Voyageurs du Monde"><sejours/></agence>
+<?xml version="1.0" encoding="UTF-8"?><agence nom="Voyageurs du Monde">
+    <sejours>
+        <sejour typeSejour="immersion en famille" typePublic="familles">
+            <offre>
+                <nomOffre>Immersion en famille à Barcelone</nomOffre>
+                <description>Découvrez Barcelone tout en vivant avec une famille locale.</description>
+                <destination>Barcelone, Espagne</destination>
+            </offre>
+            <prix>500</prix>
+            <dateDebut>2023-06-01</dateDebut>
+            <dateFin>2023-06-10</dateFin>
+        </sejour>
+    </sejours>
+</agence>

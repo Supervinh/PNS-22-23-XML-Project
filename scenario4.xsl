@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xdt="http://exslt.org/dates-and-times"
-                exclude-result-prefixes="xdt">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:variable name="dateDebut" select="xdt:format-date(//dateDebut,'2023-05-30 00:00:00')"/>
-    <xsl:variable name="dateFin" select="xdt:format-date(//dateFin,'2023-06-30 00:00:00')"/>
+    <xsl:output method="xml" indent="yes"/>
+    <xsl:variable name="dateDebut">2023-05-30</xsl:variable>
+    <xsl:variable name="dateFin">2023-06-30</xsl:variable>
 
     <xsl:template match="/">
         <agence>
@@ -12,8 +12,10 @@
             </xsl:attribute>
             <sejours>
                 <xsl:apply-templates select="/agence/sejours/sejour[
-          dateDebut &gt;= $dateDebut and dateFin &lt;= $dateFin
-        ]"/>
+                    translate(dateDebut, '-', '') &gt;= translate($dateDebut, '-', '') and
+                    translate(dateFin, '-', '') &lt;= translate($dateFin, '-', '')
+                ]"/>
+
             </sejours>
         </agence>
     </xsl:template>
