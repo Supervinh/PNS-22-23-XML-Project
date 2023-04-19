@@ -112,7 +112,7 @@
                         <testLinguistique>
                             <nom>Test de niveau</nom>
                             <langue>
-                                <langue>italien</langue>
+                                <langue>Italien</langue>
                             </langue>
                             <difficulte>B2</difficulte>
                         </testLinguistique>
@@ -169,7 +169,7 @@
                                 <enseignant idref="4">Maria</enseignant>
                             </enseignants>
                             <langue>
-                                <langue>italien</langue>
+                                <langue>Italien</langue>
                             </langue>
                         </cours>
                         <testLinguistique>
