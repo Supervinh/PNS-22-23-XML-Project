@@ -22,7 +22,9 @@
         <xsl:if test="position() > 1">
             <xsl:text>,</xsl:text>
         </xsl:if>
-        <xsl:if test="name() != 'sejour' and name()!='client' and name()!='enseignant' and name()!='accompagnateur'">
+        <xsl:if test="name() != 'sejour' and name()!='client' and name()!='enseignant'
+        and name()!='accompagnateur' and name()!='activite_sportive'
+        and name()!= 'activite_culturelle' and name()!= 'cours'">
             <xsl:text>"</xsl:text><xsl:value-of select="name()"/><xsl:text>":</xsl:text>
         </xsl:if>
 
@@ -40,8 +42,24 @@
             </xsl:when>
             <xsl:when test="'activites' = name() and count(*) > 0">
                 <xsl:text>{</xsl:text>
-                <xsl:apply-templates select="*/*[name() != 'testLinguistique']" mode="object"/>
+<!--                <xsl:apply-templates select="*/*[name() != 'testLinguistique']" mode="object"/>-->
+                <xsl:apply-templates select="*" mode="object"/>
                 <xsl:text>}</xsl:text>
+            </xsl:when>
+            <xsl:when test="'activites_sportive' = name() and count(*) > 0">
+                <xsl:text>[</xsl:text>
+                <xsl:apply-templates select="*" mode="object"/>
+                <xsl:text>]</xsl:text>
+            </xsl:when>
+            <xsl:when test="'activites_culturelle' = name() and count(*) > 0">
+                <xsl:text>[</xsl:text>
+                <xsl:apply-templates select="*" mode="object"/>
+                <xsl:text>]</xsl:text>
+            </xsl:when>
+            <xsl:when test="'activites_linguistique' = name() and count(*) > 0">
+                <xsl:text>[</xsl:text>
+                <xsl:apply-templates select="*[name()='cours']" mode="object"/>
+                <xsl:text>]</xsl:text>
             </xsl:when>
             <xsl:when test="'activite_sportive' = name() and count(*) > 0">
                 <xsl:text>{</xsl:text>
@@ -56,10 +74,14 @@
                 <xsl:call-template name="accompagnateurs">
                     <xsl:with-param name="accompagnateurs" select="encadrement_culturel"/>
                 </xsl:call-template>
+                <xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:when test="'cours' = name() and count(*) > 0">
                 <xsl:text>{</xsl:text>
-                <xsl:apply-templates select="enseignants"/>
+                <xsl:call-template name="enseignants">
+                    <xsl:with-param name="enseignants" select="enseignants"/>
+                </xsl:call-template>
+<!--                <xsl:apply-templates select="enseignants"/>-->
                 <xsl:text>}</xsl:text>
             </xsl:when>
             <xsl:when test="'clients' = name() and count(*) > 0 ">
@@ -69,9 +91,7 @@
                 <xsl:text>"</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:text>"</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
-        <xsl:if test="name() = 'sejour'">
-            <xsl:text>}</xsl:text>
-        </xsl:if>
+
     </xsl:template>
 
     <xsl:template match="clients">
@@ -83,12 +103,10 @@
         <xsl:text>]</xsl:text>
     </xsl:template>
 
-    <xsl:template match = "enseignants">
-        <xsl:if test="position() > 1">
-            <xsl:text>,</xsl:text>
-        </xsl:if>
+    <xsl:template name = "enseignants">
+        <xsl:param name="enseignants"/>
         <xsl:text>"enseignants": [</xsl:text>
-        <xsl:apply-templates select="enseignant" mode="object"/>
+        <xsl:apply-templates select="$enseignants/enseignant" mode="object"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
 

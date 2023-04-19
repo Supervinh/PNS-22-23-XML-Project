@@ -9,25 +9,29 @@
           "Denis"
         ],
         "activites": {
-          "activite_sportive": {
-            "accompagnateurs": [
-              "Marco"
-            ]
-          },
-          "activite_culturelle": {
-            "accompagnateurs": [
-              "Sophie",
-              "Paul"
-            ],
-            "cours": {
+          "activites_sportive": [
+            {
+              "accompagnateurs": [
+                "Marco"
+              ]
+            }
+          ],
+          "activites_culturelle": [
+            {
+              "accompagnateurs": [
+                "Sophie",
+                "Paul"
+              ]
+            }
+          ],
+          "activites_linguistique": [
+            {
               "enseignants": [
                 "Juan",
                 "Maria"
               ]
-            },
-            "dateDebut": "2023-06-01",
-            "dateFin": "2023-06-10"
-          }
+            }
+          ]
         }
       },
       {
@@ -38,25 +42,28 @@
           "Paul"
         ],
         "activites": {
-          "activite_culturelle": {
-            "accompagnateurs": [
-              "Sophie"
-            ],
-            "activite_culturelle": {
+          "activites_culturelle": [
+            {
+              "accompagnateurs": [
+                "Sophie"
+              ]
+            },
+            {
               "accompagnateurs": [
                 "Marco"
-              ],
-              "cours": {
-                "enseignants": [
-                  "Giuseppe",
-                  "Maria"
-                ]
-              },
-              "dateDebut": "2023-06-15",
-              "dateFin": "2023-06-23"
+              ]
             }
-          }
-        },
+          ],
+          "activites_linguistique": [
+            {
+              "enseignants": [
+                "Giuseppe",
+                "Maria"
+              ]
+            }
+          ]
+        }
+      },
       {
         "dateDebut": "2023-11-20",
         "dateFin": "2023-11-27",
@@ -65,25 +72,28 @@
           "Paul"
         ],
         "activites": {
-          "activite_culturelle": {
-            "accompagnateurs": [
-              "Sophie"
-            ],
-            "activite_culturelle": {
+          "activites_culturelle": [
+            {
+              "accompagnateurs": [
+                "Sophie"
+              ]
+            },
+            {
               "accompagnateurs": [
                 "Marco"
-              ],
-              "cours": {
-                "enseignants": [
-                  "Giuseppe",
-                  "Maria"
-                ]
-              },
-              "dateDebut": "2023-11-20",
-              "dateFin": "2023-11-27"
+              ]
             }
-          }
+          ],
+          "activites_linguistique": [
+            {
+              "enseignants": [
+                "Giuseppe",
+                "Maria"
+              ]
+            }
+          ]
         }
-        ]
       }
-    }
+    ]
+  }
+}
