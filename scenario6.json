@@ -1,0 +1,143 @@
+{
+  "agence": {
+    "sejours": {
+      "sejour": {
+        "accompagnateur": "Marco",
+
+        "accompagnateur": "Sophie",
+        "accompagnateur": "Paul",
+
+        "enseignant": "Juan",
+        "enseignant": "Maria",
+        "dateDebut": "2023-06-01",
+        "dateFin": "2023-06-10",
+        "clients": {
+          "client": "Emma",
+          "client": "Denis"
+        }
+      }
+
+    },
+    "sejour": {
+      "offre": {
+        "nomOffre": "Cours de langue italienne à Florence",
+        "description": "Partez apprendre la langue italienne dans un cadre idyllique à Florence !",
+        "langues": {
+          "langue": "Italien"
+        },
+        "destination": "Florence, Italie",
+        "activites": {
+          "activites_culturelle": {
+            "activite_culturelle": {
+              "nom": "Musée des Offices",
+              "encadrement_culturel": {
+                "accompagnateur": "Sophie"
+              },
+              "description": "Visite du musée des Offices, qui abrite une des plus importantes collections d'art de la Renaissance italienne",
+              "dateDebut": "2023-06-15",
+              "dateFin": "2023-06-15"
+            },
+            "activite_culturelle": {
+              "nom": "Visite guidée de la ville",
+              "encadrement_culturel": {
+                "accompagnateur": "Marco"
+              },
+              "description": "Visite guidée de la ville de Florence, avec ses célèbres monuments et places",
+              "dateDebut": "2023-06-16",
+              "dateFin": "2023-06-16"
+            }
+          },
+          "activites_linguistique": {
+            "cours": {
+              "nom": "Cours intensif",
+              "enseignants": {
+                "enseignant": "Giuseppe",
+                "enseignant": "Maria"
+              },
+              "langue": {
+                "langue": "italien"
+              }
+            },
+            "testLinguistique": {
+              "nom": "Test de niveau",
+              "langue": {
+                "langue": "Italien"
+              },
+              "difficulte": "B2"
+            },
+            "dateDebut": "2023-06-15",
+            "dateFin": "2023-06-23"
+          }
+        }
+      },
+      "prix": "1500",
+      "dateDebut": "2023-06-15",
+      "dateFin": "2023-06-25",
+      "clients": {
+        "client": "Marie",
+        "client": "Paul"
+      }
+    },
+    "sejour": {
+      "offre": {
+        "nomOffre": "Cours de langue italienne à Florence",
+        "description": "Partez apprendre la langue italienne dans un cadre idyllique à Florence !",
+        "langues": {
+          "langue": "Italien"
+        },
+        "destination": "Florence, Italie",
+        "activites": {
+          "activites_culturelle": {
+            "activite_culturelle": {
+              "nom": "Musée des Offices",
+              "encadrement_culturel": {
+                "accompagnateur": "Sophie"
+              },
+              "description": "Visite du musée des Offices, qui abrite une des plus importantes collections d'art de la Renaissance italienne",
+              "dateDebut": "2023-11-20",
+              "dateFin": "2023-11-20"
+            },
+            "activite_culturelle": {
+              "nom": "Visite guidée de la ville",
+              "encadrement_culturel": {
+                "accompagnateur": "Marco"
+              },
+              "description": "Visite guidée de la ville de Florence, avec ses célèbres monuments et places",
+              "dateDebut": "2023-11-22",
+              "dateFin": "2023-11-22"
+            }
+          },
+          "activites_linguistique": {
+            "cours": {
+              "nom": "Cours intensif",
+              "enseignants": {
+                "enseignant": "Giuseppe",
+                "enseignant": "Maria"
+              },
+              "langue": {
+                "langue": "Italien"
+              }
+            },
+            "testLinguistique": {
+              "nom": "Test de niveau",
+              "langue": {
+                "langue": "italien"
+              },
+              "difficulte": "B2"
+            },
+            "dateDebut": "2023-11-20",
+            "dateFin": "2023-11-27"
+          }
+        }
+      },
+      "prix": "1500",
+      "dateDebut": "2023-11-20",
+      "dateFin": "2023-11-27",
+      "clients": {
+        "client": "Marie",
+        "client": "Paul"
+      }
+    }
+  }
+}
+}
