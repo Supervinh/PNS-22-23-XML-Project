@@ -1,73 +1,86 @@
 {
   "agence": {
-    "sejours": {
-      "sejour": {
+    "sejours": [
+      {
         "dateDebut": "2023-06-01",
         "dateFin": "2023-06-10",
-        "clients": {
-          "client": "Emma",
-          "client": "Denis"
-        },
+        "clients": [
+          "Emma",
+          "Denis"
+        ],
         "activites": {
           "activite_sportive": {
-            "accompagnateur": "Marco"
+            "accompagnateurs": [
+              "Marco"
+            ]
           },
           "activite_culturelle": {
-            "accompagnateur": "Sophie",
-            "accompagnateur": "Paul"
-          },
-          "cours": {
-            "enseignant": "Juan",
-            "enseignant": "Maria"
-          },
-          "dateDebut": "2023-06-01",
-          "dateFin": "2023-06-10"
-        }
-      },
-      "sejour": {
+            "accompagnateurs": [
+              "Sophie",
+              "Paul"
+            ],
+            "cours": {
+              "enseignants": [
+                "Juan",
+                "Maria"
+              ]
+            },
+            "dateDebut": "2023-06-01",
+            "dateFin": "2023-06-10"
+          }
+        },
+      {
         "dateDebut": "2023-06-15",
         "dateFin": "2023-06-25",
-        "clients": {
-          "client": "Marie",
-          "client": "Paul"
-        },
+        "clients": [
+          "Marie",
+          "Paul"
+        ],
         "activites": {
           "activite_culturelle": {
-            "accompagnateur": "Sophie"
+            "accompagnateurs": [
+              "Sophie"
+            ],
+            "activite_culturelle": {
+              "accompagnateurs": [
+                "Marco"
+              ],
+              "cours": {
+                "enseignants": [
+                  "Giuseppe",
+                  "Maria"
+                ]
+              },
+              "dateDebut": "2023-06-15",
+              "dateFin": "2023-06-23"
+            }
           },
-          "activite_culturelle": {
-            "accompagnateur": "Marco"
-          },
-          "cours": {
-            "enseignant": "Giuseppe",
-            "enseignant": "Maria"
-          },
-          "dateDebut": "2023-06-15",
-          "dateFin": "2023-06-23"
-        }
-      },
-      "sejour": {
+      {
         "dateDebut": "2023-11-20",
         "dateFin": "2023-11-27",
-        "clients": {
-          "client": "Marie",
-          "client": "Paul"
-        },
+        "clients": [
+          "Marie",
+          "Paul"
+        ],
         "activites": {
           "activite_culturelle": {
-            "accompagnateur": "Sophie"
-          },
-          "activite_culturelle": {
-            "accompagnateur": "Marco"
-          },
-          "cours": {
-            "enseignant": "Giuseppe",
-            "enseignant": "Maria"
-          },
-          "dateDebut": "2023-11-20",
-          "dateFin": "2023-11-27"
+            "accompagnateurs": [
+              "Sophie"
+            ],
+            "activite_culturelle": {
+              "accompagnateurs": [
+                "Marco"
+              ],
+              "cours": {
+                "enseignants": [
+                  "Giuseppe",
+                  "Maria"
+                ]
+              },
+              "dateDebut": "2023-11-20",
+              "dateFin": "2023-11-27"
+            }
+          }
+          ]
         }
       }
-    }
-  }
-}
