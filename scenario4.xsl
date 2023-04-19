@@ -2,8 +2,9 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output method="xml" indent="yes"/>
-    <xsl:variable name="dateDebut">2023-05-30</xsl:variable>
-    <xsl:variable name="dateFin">2023-06-30</xsl:variable>
+    <xsl:variable name="dateDebut">2020-05-30</xsl:variable>
+    <xsl:variable name="dateFin">2024-06-30</xsl:variable>
+    <xsl:variable name="langue">italien</xsl:variable>
 
     <xsl:template match="/">
         <agence>
@@ -13,7 +14,8 @@
             <sejours>
                 <xsl:apply-templates select="/agence/sejours/sejour[
                     translate(dateDebut, '-', '') &gt;= translate($dateDebut, '-', '') and
-                    translate(dateFin, '-', '') &lt;= translate($dateFin, '-', '')
+                    translate(dateFin, '-', '') &lt;= translate($dateFin, '-', '') and
+                    offre/langues/langue = $langue
                 ]"/>
 
             </sejours>
