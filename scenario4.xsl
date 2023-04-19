@@ -4,7 +4,7 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:variable name="dateDebut">2020-05-30</xsl:variable>
     <xsl:variable name="dateFin">2024-06-30</xsl:variable>
-    <xsl:variable name="langue">italien</xsl:variable>
+    <xsl:variable name="langue">Italien</xsl:variable>
 
     <xsl:template match="/">
         <agence>
